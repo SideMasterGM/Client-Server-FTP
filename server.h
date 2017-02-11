@@ -1,26 +1,19 @@
-/**
- * Suraj Kurapati <skurapat@ucsc.edu>
- * CMPS-150, Spring04, final project
- *
- * SimpleFTP server interface.
-**/
-
 #ifndef SERVER_H
 #define SERVER_H
 
 #include "siftp.h"
 
-	/* constants */
+	/* constante */
 	
 		#define SERVER_SOCKET_BACKLOG	5
 		#define SERVER_PASSWORD	"Inform@tico"
 	
-	/* services */
+	/* servicios*/
 	
 		/**
-		 * Establishes a network service on the specified port.
-		 * @param	ap_socket	Storage for socket descriptor.
-		 * @param	a_port	Port number in decimal.
+		 * Establece un servicio de red en el puerto especificado.
+		 * @param	ap_socket	Almacenamiento para el descriptor de socket.
+		 * @param	a_port	número de puerto en decimal.
 		 */
 		Boolean service_create(int *ap_socket, const int a_port);
 		
